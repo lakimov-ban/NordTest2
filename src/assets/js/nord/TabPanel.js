@@ -1,0 +1,2 @@
+import{i as t,_ as e,s,x as n,e as a}from"./query-assigned-elements-92ce7494.js";import{s as o}from"./Component-2253424f.js";const r=t`.n-tab-panel{font-size:var(--n-font-size-m);color:var(--n-color-text)}::slotted(*){margin:0}`;let l=class extends s{render(){return n`<div class="n-tab-panel"><slot></slot></div>`}connectedCallback(){super.connectedCallback(),this.setAttribute("role","tabpanel"),this.setAttribute("tabindex","0")}};l.styles=[o,r],l=e([a("nord-tab-panel")],l);var i=l;export{i as default};
+//# sourceMappingURL=TabPanel.js.map

@@ -1,0 +1,2 @@
+import{i as t,_ as e,s as i,x as o,e as n}from"./query-assigned-elements-92ce7494.js";const r=t`:host{all:initial;border:0!important;clip:rect(1px,1px,1px,1px)!important;block-size:1px!important;overflow:hidden!important;padding:0!important;position:absolute!important;inset-block-start:0;inline-size:1px!important}`;let s=class extends i{render(){return o`<slot></slot>`}};s.styles=r,s=e([n("nord-visually-hidden")],s);var a=s;export{a as default};
+//# sourceMappingURL=VisuallyHidden.js.map

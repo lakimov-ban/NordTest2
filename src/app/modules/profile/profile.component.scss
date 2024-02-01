@@ -1,0 +1,17 @@
+:host{
+  visibility: visible;
+}
+
+.services a {
+  text-decoration: none;
+  padding: var(--n-space-s);
+  color: var(--n-color-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--n-color-text-weak);
+}
+
+.services a + a {
+  border-block-start: 1px solid var(--n-color-border);
+}

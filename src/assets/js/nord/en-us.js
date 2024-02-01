@@ -1,0 +1,2 @@
+import o from"./localization.js";import a from"./localization2.js";import i from"./localization3.js";import r from"./localization4.js";import n from"./localization5.js";import t from"./localization6.js";import l from"./localization7.js";import m from"./localization8.js";const d={$lang:"en-US",$name:"English",$dir:"ltr","nord-command-menu":o,"nord-calendar":i,"nord-date-picker":a,"nord-modal":r,"nord-nav-toggle":n,"nord-textarea":t,"nord-notification":l,"nord-message":m};export{d as default};
+//# sourceMappingURL=en-us.js.map

@@ -1,0 +1,2 @@
+import{_ as s}from"./query-assigned-elements-92ce7494.js";import{t as i}from"./state-d31c6912.js";import{e as t}from"./ref-99418ab4.js";import{a as e,N as o}from"./events-d9666e88.js";function a(a){class n extends a{constructor(){super(...arguments),this.notificationRef=t(),this.dismissed=!1}async dismiss(){this.notificationRef.value&&(this.dismissed=!0,await e(this.notificationRef.value),this.dispatchEvent(new o("dismiss")))}}return s([i()],n.prototype,"dismissed",void 0),n}export{a as N};
+//# sourceMappingURL=NotificationMixin-207f1f56.js.map

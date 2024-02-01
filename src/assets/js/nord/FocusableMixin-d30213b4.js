@@ -1,0 +1,2 @@
+import{e as l}from"./ref-99418ab4.js";function u(u){return class extends u{constructor(){super(...arguments),this.focusableRef=l()}focus(l){var u;null===(u=this.focusableRef.value)||void 0===u||u.focus(l)}blur(){var l;null===(l=this.focusableRef.value)||void 0===l||l.blur()}click(){var l;null===(l=this.focusableRef.value)||void 0===l||l.click()}}}export{u as F};
+//# sourceMappingURL=FocusableMixin-d30213b4.js.map
