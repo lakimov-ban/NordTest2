@@ -1,0 +1,21 @@
+<nord-stack
+        direction="horizontal"
+        role="navigation"
+        aria-labelledby="short-pagination-label"
+        style="justify-content: end"
+>
+    <nord-select [ngModel]="value.pageSize" (ngModelChange)="selectPageSize($event)"
+                 value="25" hide-label>
+        <option *ngFor="let size of pageSizes" [value]="size">По {{ size }} строк</option>
+    </nord-select>
+    <nord-input style="--n-input-inline-size: 130px" disallow-pattern="[^0-9]" hide-label>
+        <nord-button [disabled]="value.page === 1" (click)="selectPage(value.page - 1)"
+                     slot="start" aria-describedby="api-tooltip">
+            <nord-icon name="arrow-left-small" label="Previous"></nord-icon>
+        </nord-button>
+        <nord-button [disabled]="value.page === totalPages" (click)="selectPage(value.page + 1)"
+                     slot="end" aria-describedby="password-tooltip">
+            <nord-icon name="arrow-right-small" label="Next"></nord-icon>
+        </nord-button>
+    </nord-input>
+</nord-stack>
