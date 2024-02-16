@@ -1,0 +1,40 @@
+<nord-layout class="n-padding-m">
+    <nord-stack style="max-width: 340px;">
+        <nord-card padding="l">
+            <h1 slot="header">Изменит пароль</h1>
+            <form action="#">
+                <nord-stack>
+                    <nord-input
+                            label="Старый пароль"
+                            expand
+                            required
+                            hide-required
+                            name="password"
+                            type="password"
+                            placeholder="••••••••">
+                    </nord-input>
+                    <nord-input
+                            label="Новый пароль"
+                            expand
+                            required
+                            hide-required
+                            name="password"
+                            type="password"
+                            placeholder="••••••••">
+                    </nord-input>
+                    <nord-input
+                            label="Подтверждение нового пароля"
+                            expand
+                            required
+                            hide-required
+                            name="password"
+                            type="password"
+                            placeholder="••••••••">
+                    </nord-input>
+                    <nord-button type="submit" expand variant="primary">Изменить</nord-button>
+                </nord-stack>
+            </form>
+        </nord-card>
+        <nord-card class="n-align-center"> Забыли пароль? <a href="#"> Восстановить </a></nord-card>
+    </nord-stack>
+</nord-layout>

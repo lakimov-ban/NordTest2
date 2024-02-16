@@ -3,12 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: "",
+    loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule)
+  },
+  {
     path: "profile",
     loadChildren: () => import('./modules/profile/profile.module').then(m => m.ProfileModule)
   },
   {
-    path: "top-users",
-    loadChildren: () => import('./modules/top-users/top-users.module').then(m => m.TopUsersModule)
+    path: "users",
+    loadChildren: () => import('./modules/users/users.module').then(m => m.UsersModule)
   },
   {
     path: "settings",

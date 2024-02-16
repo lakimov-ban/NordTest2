@@ -2,17 +2,25 @@ import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SettingsComponent } from './settings.component';
 import {RouterModule, Routes} from "@angular/router";
+import { SecurityComponent } from './security/security.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: SettingsComponent
+    component: SettingsComponent,
+    children: [
+      {
+        path: 'security',
+        component: SecurityComponent
+      }
+    ]
   }
 ];
 
 @NgModule({
   declarations: [
-    SettingsComponent
+    SettingsComponent,
+    SecurityComponent
   ],
   imports: [
     CommonModule,

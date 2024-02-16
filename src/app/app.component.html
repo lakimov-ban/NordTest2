@@ -9,10 +9,10 @@
                     style="visibility: hidden; opacity: 0;">Search
         <nord-icon slot="shortcut" name="keyboard-option" label="Option key"></nord-icon>
         <span slot="shortcut">S</span></nord-tooltip>
-      <nord-nav-item icon="navigation-notifications" aria-describedby="notifications" badge="12">Notifications
+      <nord-nav-item icon="navigation-notifications" aria-describedby="notifications" badge="12">Оповещение
       </nord-nav-item>
       <nord-tooltip id="notifications" position="inline-end" role="tooltip" delay="500"
-                    style="visibility: hidden; opacity: 0;">Notifications
+                    style="visibility: hidden; opacity: 0;">Оповещение
         <nord-icon slot="shortcut" name="keyboard-option" label="Option key"></nord-icon>
         <span slot="shortcut">N</span></nord-tooltip>
       <nord-nav-item icon="navigation-tasks" aria-describedby="tasks">My tasks</nord-nav-item>
@@ -23,12 +23,10 @@
     </nord-nav-group>
     <nord-nav-group heading="Workspace">
       <nord-nav-item href="#" icon="navigation-dashboard">Dashboard</nord-nav-item>
-      <nord-nav-item href="/top-users" icon="navigation-reports">Top users</nord-nav-item>
-      <nord-nav-item icon="navigation-payments" active="">Payments
+      <nord-nav-item icon="navigation-payments" routerLinkActive="active">Пользователи
         <nord-nav-group slot="subnav">
-          <nord-nav-item href="#" active="">All transactions</nord-nav-item>
-          <nord-nav-item href="#">Payments</nord-nav-item>
-          <nord-nav-item href="#">Disputes</nord-nav-item>
+          <nord-nav-item href="/users" active="{{router.isActive('/users', true)}}">Все</nord-nav-item>
+          <nord-nav-item href="/users/top" active="{{router.isActive('/users/top', true)}}">Top</nord-nav-item>
         </nord-nav-group>
       </nord-nav-item>
       <nord-nav-item icon="navigation-reports">Reports
@@ -47,10 +45,9 @@
                    type="submit" size="m" aria-expanded="false">
         <nord-icon name="navigation-notifications" size="m" color="rgba(255,255,255,0.85)"></nord-icon>
         <div class="n-counter" aria-hidden="true" style="position: absolute">12</div><!----></nord-button>
-      <h2 slot="header" class="n-typescale-l">Notifications <span class="n-font-weight n-color-text-weaker">(12)</span>
+      <h2 slot="header" class="n-typescale-l">Оповещение<span class="n-font-weight n-color-text-weaker">(12)</span>
       </h2>
-      <nord-button slot="header-end" size="s" autofocus="" variant="default" type="submit">Mark all as read
-        <!----></nord-button>
+      <nord-button slot="header-end" size="s" autofocus="" variant="default" type="submit">Пометить как прочитанные</nord-button>
       <nord-message unread="" highlight="">Ariel Salminen arrived to clinic with Pixie cat. <span slot="footer">Just now at Nord Clinic</span>
       </nord-message>
       <nord-message unread="">New feature available! We’ve introduced a quick way to navigate between app views,
@@ -65,9 +62,9 @@
       </nord-message>
       <nord-message unread="">Elvin van Eede arrived to clinic with Amoeba cat. <span slot="footer">12 hours ago at Nord Clinic</span>
       </nord-message>
-      <nord-dropdown-item>See all notifications
-        <nord-icon slot="end" name="arrow-right-long"></nord-icon>
-      </nord-dropdown-item>
+      <div style="display: flex; justify-content: center">
+        <nord-spinner size="l"></nord-spinner>
+      </div>
     </nord-dropdown>
     <nord-tooltip id="notifications-tooltip" position="block-start" role="tooltip" delay="500"
                   style="visibility: hidden; opacity: 0;">12 unread notifications

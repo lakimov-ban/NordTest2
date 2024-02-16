@@ -1,18 +1,18 @@
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DashboardComponent } from './dashboard.component';
 import {RouterModule, Routes} from "@angular/router";
-import {TopUsersComponent} from "./top-users.component";
 
 const routes: Routes = [
   {
     path: '',
-    component: TopUsersComponent
+    component: DashboardComponent
   }
 ];
 
 @NgModule({
   declarations: [
-    TopUsersComponent
+    DashboardComponent
   ],
   imports: [
     CommonModule,
@@ -25,4 +25,4 @@ const routes: Routes = [
     CUSTOM_ELEMENTS_SCHEMA
   ]
 })
-export class TopUsersModule { }
+export class DashboardModule { }
